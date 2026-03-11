@@ -1,0 +1,2343 @@
+{
+  "generatedAt": "2026-03-11T18:53:40.206Z",
+  "oldGuideUpdatedOn": "2025-10-19",
+  "newGuideUpdatedOn": "2026-03-10",
+  "thresholds": {
+    "fuzzyMatch": 0.82,
+    "strongTextMatch": 0.97
+  },
+  "chapterStats": [
+    {
+      "chapter": 1,
+      "title": "Chapter 1: Get to da chopper earth staves",
+      "counts": {
+        "unchanged": 90,
+        "modified": 8,
+        "added": 0,
+        "removed": 0,
+        "reordered": 0
+      }
+    },
+    {
+      "chapter": 2,
+      "title": "Chapter 2: Quests, so many quests",
+      "counts": {
+        "unchanged": 72,
+        "modified": 10,
+        "added": 13,
+        "removed": 2,
+        "reordered": 5
+      }
+    },
+    {
+      "chapter": 3,
+      "title": "Chapter 3: The longest home stretch you’ve ever seen",
+      "counts": {
+        "unchanged": 21,
+        "modified": 2,
+        "added": 4,
+        "removed": 0,
+        "reordered": 2
+      }
+    }
+  ],
+  "totals": {
+    "unchanged": 183,
+    "modified": 20,
+    "added": 17,
+    "removed": 2,
+    "reordered": 7
+  },
+  "mappings": [
+    {
+      "chapter": 1,
+      "oldId": "old-1-1",
+      "newId": "new-1-1",
+      "oldStep": 1,
+      "newStep": 1,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-2",
+      "newId": "new-1-2",
+      "oldStep": 2,
+      "newStep": 2,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-3",
+      "newId": "new-1-3",
+      "oldStep": 3,
+      "newStep": 3,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-4",
+      "newId": "new-1-4",
+      "oldStep": 4,
+      "newStep": 4,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-5",
+      "newId": "new-1-5",
+      "oldStep": 5,
+      "newStep": 5,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-6",
+      "newId": "new-1-6",
+      "oldStep": 6,
+      "newStep": 6,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-7",
+      "newId": "new-1-7",
+      "oldStep": 7,
+      "newStep": 7,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-8",
+      "newId": "new-1-8",
+      "oldStep": 8,
+      "newStep": 8,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-9",
+      "newId": "new-1-9",
+      "oldStep": 9,
+      "newStep": 9,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-10",
+      "newId": "new-1-10",
+      "oldStep": 10,
+      "newStep": 10,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-11",
+      "newId": "new-1-11",
+      "oldStep": 11,
+      "newStep": 11,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-12",
+      "newId": "new-1-12",
+      "oldStep": 12,
+      "newStep": 12,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-13",
+      "newId": "new-1-13",
+      "oldStep": 13,
+      "newStep": 13,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-14",
+      "newId": "new-1-14",
+      "oldStep": 14,
+      "newStep": 14,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-15",
+      "newId": "new-1-15",
+      "oldStep": 15,
+      "newStep": 15,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-16",
+      "newId": "new-1-16",
+      "oldStep": 16,
+      "newStep": 16,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-17",
+      "newId": "new-1-17",
+      "oldStep": 17,
+      "newStep": 17,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-18",
+      "newId": "new-1-18",
+      "oldStep": 18,
+      "newStep": 18,
+      "category": "modified",
+      "similarity": 0.9988,
+      "note": "Text changed (similarity 1.00)"
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-19",
+      "newId": "new-1-19",
+      "oldStep": 19,
+      "newStep": 19,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-20",
+      "newId": "new-1-20",
+      "oldStep": 20,
+      "newStep": 20,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-21",
+      "newId": "new-1-21",
+      "oldStep": 21,
+      "newStep": 21,
+      "category": "modified",
+      "similarity": 0.9486,
+      "note": "Text changed (similarity 0.95)"
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-22",
+      "newId": "new-1-22",
+      "oldStep": 22,
+      "newStep": 22,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-23",
+      "newId": "new-1-23",
+      "oldStep": 23,
+      "newStep": 23,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-24",
+      "newId": "new-1-24",
+      "oldStep": 24,
+      "newStep": 24,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-25",
+      "newId": "new-1-25",
+      "oldStep": 25,
+      "newStep": 25,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-26",
+      "newId": "new-1-26",
+      "oldStep": 26,
+      "newStep": 26,
+      "category": "modified",
+      "similarity": 0.9813,
+      "note": "Text changed (similarity 0.98)"
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-27",
+      "newId": "new-1-27",
+      "oldStep": 27,
+      "newStep": 27,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-28",
+      "newId": "new-1-28",
+      "oldStep": 28,
+      "newStep": 28,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-29",
+      "newId": "new-1-29",
+      "oldStep": 29,
+      "newStep": 29,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-30",
+      "newId": "new-1-30",
+      "oldStep": 30,
+      "newStep": 30,
+      "category": "modified",
+      "similarity": 0.9634,
+      "note": "Text changed (similarity 0.96)"
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-31",
+      "newId": "new-1-31",
+      "oldStep": 31,
+      "newStep": 31,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-32",
+      "newId": "new-1-32",
+      "oldStep": 32,
+      "newStep": 32,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-33",
+      "newId": "new-1-33",
+      "oldStep": 33,
+      "newStep": 33,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-34",
+      "newId": "new-1-34",
+      "oldStep": 34,
+      "newStep": 34,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-35",
+      "newId": "new-1-35",
+      "oldStep": 35,
+      "newStep": 35,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-36",
+      "newId": "new-1-36",
+      "oldStep": 36,
+      "newStep": 36,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-37",
+      "newId": "new-1-37",
+      "oldStep": 37,
+      "newStep": 37,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-38",
+      "newId": "new-1-38",
+      "oldStep": 38,
+      "newStep": 38,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-39",
+      "newId": "new-1-39",
+      "oldStep": 39,
+      "newStep": 39,
+      "category": "modified",
+      "similarity": 0.9808,
+      "note": "Text changed (similarity 0.98)"
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-40",
+      "newId": "new-1-40",
+      "oldStep": 40,
+      "newStep": 40,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-41",
+      "newId": "new-1-41",
+      "oldStep": 41,
+      "newStep": 41,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-42",
+      "newId": "new-1-42",
+      "oldStep": 42,
+      "newStep": 42,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-43",
+      "newId": "new-1-43",
+      "oldStep": 43,
+      "newStep": 43,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-44",
+      "newId": "new-1-44",
+      "oldStep": 44,
+      "newStep": 44,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-45",
+      "newId": "new-1-45",
+      "oldStep": 45,
+      "newStep": 45,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-46",
+      "newId": "new-1-46",
+      "oldStep": 46,
+      "newStep": 46,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-47",
+      "newId": "new-1-47",
+      "oldStep": 47,
+      "newStep": 47,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-48",
+      "newId": "new-1-48",
+      "oldStep": 48,
+      "newStep": 48,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-49",
+      "newId": "new-1-49",
+      "oldStep": 49,
+      "newStep": 49,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-50",
+      "newId": "new-1-50",
+      "oldStep": 50,
+      "newStep": 50,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-51",
+      "newId": "new-1-51",
+      "oldStep": 51,
+      "newStep": 51,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-52",
+      "newId": "new-1-52",
+      "oldStep": 52,
+      "newStep": 52,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-53",
+      "newId": "new-1-53",
+      "oldStep": 53,
+      "newStep": 53,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-54",
+      "newId": "new-1-54",
+      "oldStep": 54,
+      "newStep": 54,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-55",
+      "newId": "new-1-55",
+      "oldStep": 55,
+      "newStep": 55,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-56",
+      "newId": "new-1-56",
+      "oldStep": 56,
+      "newStep": 56,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-57",
+      "newId": "new-1-57",
+      "oldStep": 57,
+      "newStep": 57,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-58",
+      "newId": "new-1-58",
+      "oldStep": 58,
+      "newStep": 58,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-59",
+      "newId": "new-1-59",
+      "oldStep": 59,
+      "newStep": 59,
+      "category": "modified",
+      "similarity": 0.9117,
+      "note": "Text changed (similarity 0.91)"
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-60",
+      "newId": "new-1-60",
+      "oldStep": 60,
+      "newStep": 60,
+      "category": "modified",
+      "similarity": 0.9954,
+      "note": "Text changed (similarity 1.00)"
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-61",
+      "newId": "new-1-61",
+      "oldStep": 61,
+      "newStep": 61,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-62",
+      "newId": "new-1-62",
+      "oldStep": 62,
+      "newStep": 62,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-63",
+      "newId": "new-1-63",
+      "oldStep": 63,
+      "newStep": 63,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-64",
+      "newId": "new-1-64",
+      "oldStep": 64,
+      "newStep": 64,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-65",
+      "newId": "new-1-65",
+      "oldStep": 65,
+      "newStep": 65,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-66",
+      "newId": "new-1-66",
+      "oldStep": 66,
+      "newStep": 66,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-67",
+      "newId": "new-1-67",
+      "oldStep": 67,
+      "newStep": 67,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-68",
+      "newId": "new-1-68",
+      "oldStep": 68,
+      "newStep": 68,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-69",
+      "newId": "new-1-69",
+      "oldStep": 69,
+      "newStep": 69,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-70",
+      "newId": "new-1-70",
+      "oldStep": 70,
+      "newStep": 70,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-71",
+      "newId": "new-1-71",
+      "oldStep": 71,
+      "newStep": 71,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-72",
+      "newId": "new-1-72",
+      "oldStep": 72,
+      "newStep": 72,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-73",
+      "newId": "new-1-73",
+      "oldStep": 73,
+      "newStep": 73,
+      "category": "modified",
+      "similarity": 0.9888,
+      "note": "Text changed (similarity 0.99)"
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-74",
+      "newId": "new-1-74",
+      "oldStep": 74,
+      "newStep": 74,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-75",
+      "newId": "new-1-75",
+      "oldStep": 75,
+      "newStep": 75,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-76",
+      "newId": "new-1-76",
+      "oldStep": 76,
+      "newStep": 76,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-77",
+      "newId": "new-1-77",
+      "oldStep": 77,
+      "newStep": 77,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-78",
+      "newId": "new-1-78",
+      "oldStep": 78,
+      "newStep": 78,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-79",
+      "newId": "new-1-79",
+      "oldStep": 79,
+      "newStep": 79,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-80",
+      "newId": "new-1-80",
+      "oldStep": 80,
+      "newStep": 80,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-81",
+      "newId": "new-1-81",
+      "oldStep": 81,
+      "newStep": 81,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-82",
+      "newId": "new-1-82",
+      "oldStep": 82,
+      "newStep": 82,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-83",
+      "newId": "new-1-83",
+      "oldStep": 83,
+      "newStep": 83,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-84",
+      "newId": "new-1-84",
+      "oldStep": 84,
+      "newStep": 84,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-85",
+      "newId": "new-1-85",
+      "oldStep": 85,
+      "newStep": 85,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-86",
+      "newId": "new-1-86",
+      "oldStep": 86,
+      "newStep": 86,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-87",
+      "newId": "new-1-87",
+      "oldStep": 87,
+      "newStep": 87,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-88",
+      "newId": "new-1-88",
+      "oldStep": 88,
+      "newStep": 88,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-89",
+      "newId": "new-1-89",
+      "oldStep": 89,
+      "newStep": 89,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-90",
+      "newId": "new-1-90",
+      "oldStep": 90,
+      "newStep": 90,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-91",
+      "newId": "new-1-91",
+      "oldStep": 91,
+      "newStep": 91,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-92",
+      "newId": "new-1-92",
+      "oldStep": 92,
+      "newStep": 92,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-93",
+      "newId": "new-1-93",
+      "oldStep": 93,
+      "newStep": 93,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-94",
+      "newId": "new-1-94",
+      "oldStep": 94,
+      "newStep": 94,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-95",
+      "newId": "new-1-95",
+      "oldStep": 95,
+      "newStep": 95,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-96",
+      "newId": "new-1-96",
+      "oldStep": 96,
+      "newStep": 96,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-97",
+      "newId": "new-1-97",
+      "oldStep": 97,
+      "newStep": 97,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 1,
+      "oldId": "old-1-98",
+      "newId": "new-1-98",
+      "oldStep": 98,
+      "newStep": 98,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-1",
+      "newId": "new-2-1",
+      "oldStep": 1,
+      "newStep": 1,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-2",
+      "newId": "new-2-2",
+      "oldStep": 2,
+      "newStep": 2,
+      "category": "modified",
+      "similarity": 0.9887,
+      "note": "Text changed (similarity 0.99)"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-3",
+      "newId": "new-2-3",
+      "oldStep": 3,
+      "newStep": 3,
+      "category": "modified",
+      "similarity": 0.9789,
+      "note": "Text changed (similarity 0.98)"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-4",
+      "newId": "new-2-4",
+      "oldStep": 4,
+      "newStep": 4,
+      "category": "modified",
+      "similarity": 0.9878,
+      "note": "Text changed (similarity 0.99)"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-5",
+      "newId": "new-2-5",
+      "oldStep": 5,
+      "newStep": 5,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-6",
+      "newId": "new-2-6",
+      "oldStep": 6,
+      "newStep": 6,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-7",
+      "newId": "new-2-7",
+      "oldStep": 7,
+      "newStep": 7,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-8",
+      "newId": "new-2-8",
+      "oldStep": 8,
+      "newStep": 8,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-9",
+      "newId": "new-2-9",
+      "oldStep": 9,
+      "newStep": 9,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-10",
+      "newId": "new-2-10",
+      "oldStep": 10,
+      "newStep": 10,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-11",
+      "newId": "new-2-11",
+      "oldStep": 11,
+      "newStep": 11,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-12",
+      "newId": "new-2-12",
+      "oldStep": 12,
+      "newStep": 12,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-13",
+      "newId": "new-2-13",
+      "oldStep": 13,
+      "newStep": 13,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-14",
+      "newId": "new-2-14",
+      "oldStep": 14,
+      "newStep": 14,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-15",
+      "newId": "new-2-15",
+      "oldStep": 15,
+      "newStep": 15,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-16",
+      "newId": "new-2-16",
+      "oldStep": 16,
+      "newStep": 16,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-17",
+      "newId": "new-2-17",
+      "oldStep": 17,
+      "newStep": 17,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-18",
+      "newId": "new-2-18",
+      "oldStep": 18,
+      "newStep": 18,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-19",
+      "newId": "new-2-19",
+      "oldStep": 19,
+      "newStep": 19,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-20",
+      "newId": "new-2-20",
+      "oldStep": 20,
+      "newStep": 20,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-21",
+      "newId": "new-2-21",
+      "oldStep": 21,
+      "newStep": 21,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-22",
+      "newId": "new-2-22",
+      "oldStep": 22,
+      "newStep": 22,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-23",
+      "newId": "new-2-23",
+      "oldStep": 23,
+      "newStep": 23,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-24",
+      "newId": "new-2-24",
+      "oldStep": 24,
+      "newStep": 24,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-25",
+      "newId": "new-2-25",
+      "oldStep": 25,
+      "newStep": 25,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-26",
+      "newId": "new-2-26",
+      "oldStep": 26,
+      "newStep": 26,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-27",
+      "newId": "new-2-27",
+      "oldStep": 27,
+      "newStep": 27,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-28",
+      "newId": "new-2-28",
+      "oldStep": 28,
+      "newStep": 28,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-29",
+      "newId": "new-2-29",
+      "oldStep": 29,
+      "newStep": 29,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-30",
+      "newId": "new-2-30",
+      "oldStep": 30,
+      "newStep": 30,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-31",
+      "newId": "new-2-31",
+      "oldStep": 31,
+      "newStep": 31,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-32",
+      "newId": "new-2-32",
+      "oldStep": 32,
+      "newStep": 32,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-33",
+      "newId": "new-2-33",
+      "oldStep": 33,
+      "newStep": 33,
+      "category": "modified",
+      "similarity": 0.8843,
+      "note": "Text changed (similarity 0.88)"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-34",
+      "oldStep": null,
+      "newStep": 34,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-35",
+      "oldStep": null,
+      "newStep": 35,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-36",
+      "oldStep": null,
+      "newStep": 36,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-37",
+      "oldStep": null,
+      "newStep": 37,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-38",
+      "oldStep": null,
+      "newStep": 38,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-39",
+      "oldStep": null,
+      "newStep": 39,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-40",
+      "oldStep": null,
+      "newStep": 40,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-41",
+      "oldStep": null,
+      "newStep": 41,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-35",
+      "newId": "new-2-42",
+      "oldStep": 35,
+      "newStep": 42,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-36",
+      "newId": "new-2-43",
+      "oldStep": 36,
+      "newStep": 43,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-37",
+      "newId": "new-2-44",
+      "oldStep": 37,
+      "newStep": 44,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-38",
+      "newId": "new-2-45",
+      "oldStep": 38,
+      "newStep": 45,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-39",
+      "newId": "new-2-46",
+      "oldStep": 39,
+      "newStep": 46,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-40",
+      "newId": "new-2-47",
+      "oldStep": 40,
+      "newStep": 47,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-41",
+      "newId": "new-2-48",
+      "oldStep": 41,
+      "newStep": 48,
+      "category": "modified",
+      "similarity": 0.9264,
+      "note": "Text changed (similarity 0.93)"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-42",
+      "newId": "new-2-49",
+      "oldStep": 42,
+      "newStep": 49,
+      "category": "modified",
+      "similarity": 0.9036,
+      "note": "Text changed (similarity 0.90)"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-43",
+      "newId": "new-2-50",
+      "oldStep": 43,
+      "newStep": 50,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-44",
+      "newId": "new-2-51",
+      "oldStep": 44,
+      "newStep": 51,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-45",
+      "newId": "new-2-52",
+      "oldStep": 45,
+      "newStep": 52,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-46",
+      "newId": "new-2-53",
+      "oldStep": 46,
+      "newStep": 53,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-47",
+      "newId": "new-2-54",
+      "oldStep": 47,
+      "newStep": 54,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-48",
+      "newId": "new-2-55",
+      "oldStep": 48,
+      "newStep": 55,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-49",
+      "newId": "new-2-56",
+      "oldStep": 49,
+      "newStep": 56,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-50",
+      "newId": "new-2-57",
+      "oldStep": 50,
+      "newStep": 57,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-51",
+      "newId": "new-2-58",
+      "oldStep": 51,
+      "newStep": 58,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-52",
+      "newId": "new-2-59",
+      "oldStep": 52,
+      "newStep": 59,
+      "category": "modified",
+      "similarity": 0.9321,
+      "note": "Text changed (similarity 0.93)"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-53",
+      "newId": "new-2-60",
+      "oldStep": 53,
+      "newStep": 60,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-54",
+      "newId": "new-2-61",
+      "oldStep": 54,
+      "newStep": 61,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-55",
+      "newId": "new-2-62",
+      "oldStep": 55,
+      "newStep": 62,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-56",
+      "newId": "new-2-63",
+      "oldStep": 56,
+      "newStep": 63,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-57",
+      "newId": "new-2-64",
+      "oldStep": 57,
+      "newStep": 64,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-58",
+      "newId": "new-2-65",
+      "oldStep": 58,
+      "newStep": 65,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-59",
+      "newId": "new-2-66",
+      "oldStep": 59,
+      "newStep": 66,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-60",
+      "newId": "new-2-67",
+      "oldStep": 60,
+      "newStep": 67,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-61",
+      "newId": "new-2-68",
+      "oldStep": 61,
+      "newStep": 68,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-62",
+      "newId": "new-2-69",
+      "oldStep": 62,
+      "newStep": 69,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-63",
+      "newId": "new-2-70",
+      "oldStep": 63,
+      "newStep": 70,
+      "category": "reordered",
+      "similarity": 0.9879,
+      "note": "Likely moved from step 63 to step 70"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-64",
+      "newId": "new-2-71",
+      "oldStep": 64,
+      "newStep": 71,
+      "category": "modified",
+      "similarity": 0.9398,
+      "note": "Text changed (similarity 0.94)"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-65",
+      "newId": "new-2-72",
+      "oldStep": 65,
+      "newStep": 72,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-66",
+      "newId": "new-2-73",
+      "oldStep": 66,
+      "newStep": 73,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-67",
+      "newId": "new-2-74",
+      "oldStep": 67,
+      "newStep": 74,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-68",
+      "newId": "new-2-75",
+      "oldStep": 68,
+      "newStep": 75,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-69",
+      "newId": "new-2-76",
+      "oldStep": 69,
+      "newStep": 76,
+      "category": "reordered",
+      "similarity": 0.9934,
+      "note": "Likely moved from step 69 to step 76"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-70",
+      "newId": "new-2-77",
+      "oldStep": 70,
+      "newStep": 77,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-71",
+      "newId": "new-2-78",
+      "oldStep": 71,
+      "newStep": 78,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-72",
+      "newId": "new-2-79",
+      "oldStep": 72,
+      "newStep": 79,
+      "category": "modified",
+      "similarity": 0.9694,
+      "note": "Text changed (similarity 0.97)"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-80",
+      "oldStep": null,
+      "newStep": 80,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-81",
+      "oldStep": null,
+      "newStep": 81,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-82",
+      "oldStep": null,
+      "newStep": 82,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-73",
+      "newId": "new-2-83",
+      "oldStep": 73,
+      "newStep": 83,
+      "category": "modified",
+      "similarity": 0.8532,
+      "note": "Text changed (similarity 0.85)"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-74",
+      "newId": "new-2-84",
+      "oldStep": 74,
+      "newStep": 84,
+      "category": "reordered",
+      "similarity": 0.9746,
+      "note": "Likely moved from step 74 to step 84"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-75",
+      "newId": "new-2-85",
+      "oldStep": 75,
+      "newStep": 85,
+      "category": "reordered",
+      "similarity": 0.9942,
+      "note": "Likely moved from step 75 to step 85"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-76",
+      "newId": "new-2-86",
+      "oldStep": 76,
+      "newStep": 86,
+      "category": "reordered",
+      "similarity": 0.9763,
+      "note": "Likely moved from step 76 to step 86"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-77",
+      "newId": "new-2-87",
+      "oldStep": 77,
+      "newStep": 87,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-78",
+      "newId": "new-2-88",
+      "oldStep": 78,
+      "newStep": 88,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-89",
+      "oldStep": null,
+      "newStep": 89,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": null,
+      "newId": "new-2-90",
+      "oldStep": null,
+      "newStep": 90,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-80",
+      "newId": "new-2-91",
+      "oldStep": 80,
+      "newStep": 91,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-81",
+      "newId": "new-2-92",
+      "oldStep": 81,
+      "newStep": 92,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-82",
+      "newId": "new-2-93",
+      "oldStep": 82,
+      "newStep": 93,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-83",
+      "newId": "new-2-94",
+      "oldStep": 83,
+      "newStep": 94,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-84",
+      "newId": "new-2-95",
+      "oldStep": 84,
+      "newStep": 95,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-85",
+      "newId": "new-2-96",
+      "oldStep": 85,
+      "newStep": 96,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-86",
+      "newId": "new-2-97",
+      "oldStep": 86,
+      "newStep": 97,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-87",
+      "newId": "new-2-98",
+      "oldStep": 87,
+      "newStep": 98,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-88",
+      "newId": "new-2-99",
+      "oldStep": 88,
+      "newStep": 99,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-89",
+      "newId": "new-2-100",
+      "oldStep": 89,
+      "newStep": 100,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-34",
+      "newId": null,
+      "oldStep": 34,
+      "newStep": null,
+      "category": "removed",
+      "similarity": null,
+      "note": "Step exists only in old guide"
+    },
+    {
+      "chapter": 2,
+      "oldId": "old-2-79",
+      "newId": null,
+      "oldStep": 79,
+      "newStep": null,
+      "category": "removed",
+      "similarity": null,
+      "note": "Step exists only in old guide"
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-1",
+      "newId": "new-3-1",
+      "oldStep": 1,
+      "newStep": 1,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-2",
+      "newId": "new-3-2",
+      "oldStep": 2,
+      "newStep": 2,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-3",
+      "newId": "new-3-3",
+      "oldStep": 3,
+      "newStep": 3,
+      "category": "modified",
+      "similarity": 0.972,
+      "note": "Text changed (similarity 0.97)"
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-4",
+      "newId": "new-3-4",
+      "oldStep": 4,
+      "newStep": 4,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-5",
+      "newId": "new-3-5",
+      "oldStep": 5,
+      "newStep": 5,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-6",
+      "newId": "new-3-6",
+      "oldStep": 6,
+      "newStep": 6,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-7",
+      "newId": "new-3-7",
+      "oldStep": 7,
+      "newStep": 7,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-8",
+      "newId": "new-3-8",
+      "oldStep": 8,
+      "newStep": 8,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-9",
+      "newId": "new-3-9",
+      "oldStep": 9,
+      "newStep": 9,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-12",
+      "newId": "new-3-10",
+      "oldStep": 12,
+      "newStep": 10,
+      "category": "reordered",
+      "similarity": 1,
+      "note": "Moved from step 12 to step 10"
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-10",
+      "newId": "new-3-11",
+      "oldStep": 10,
+      "newStep": 11,
+      "category": "modified",
+      "similarity": 0.8902,
+      "note": "Text changed (similarity 0.89)"
+    },
+    {
+      "chapter": 3,
+      "oldId": null,
+      "newId": "new-3-12",
+      "oldStep": null,
+      "newStep": 12,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 3,
+      "oldId": null,
+      "newId": "new-3-13",
+      "oldStep": null,
+      "newStep": 13,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 3,
+      "oldId": null,
+      "newId": "new-3-14",
+      "oldStep": null,
+      "newStep": 14,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-11",
+      "newId": "new-3-15",
+      "oldStep": 11,
+      "newStep": 15,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-13",
+      "newId": "new-3-16",
+      "oldStep": 13,
+      "newStep": 16,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-14",
+      "newId": "new-3-17",
+      "oldStep": 14,
+      "newStep": 17,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-15",
+      "newId": "new-3-18",
+      "oldStep": 15,
+      "newStep": 18,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-16",
+      "newId": "new-3-19",
+      "oldStep": 16,
+      "newStep": 19,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-17",
+      "newId": "new-3-20",
+      "oldStep": 17,
+      "newStep": 20,
+      "category": "reordered",
+      "similarity": 0.9742,
+      "note": "Likely moved from step 17 to step 20"
+    },
+    {
+      "chapter": 3,
+      "oldId": null,
+      "newId": "new-3-21",
+      "oldStep": null,
+      "newStep": 21,
+      "category": "added",
+      "similarity": null,
+      "note": "Step exists only in new guide"
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-18",
+      "newId": "new-3-22",
+      "oldStep": 18,
+      "newStep": 22,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-19",
+      "newId": "new-3-23",
+      "oldStep": 19,
+      "newStep": 23,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-20",
+      "newId": "new-3-24",
+      "oldStep": 20,
+      "newStep": 24,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-21",
+      "newId": "new-3-25",
+      "oldStep": 21,
+      "newStep": 25,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-22",
+      "newId": "new-3-26",
+      "oldStep": 22,
+      "newStep": 26,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-23",
+      "newId": "new-3-27",
+      "oldStep": 23,
+      "newStep": 27,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-24",
+      "newId": "new-3-28",
+      "oldStep": 24,
+      "newStep": 28,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    },
+    {
+      "chapter": 3,
+      "oldId": "old-3-25",
+      "newId": "new-3-29",
+      "oldStep": 25,
+      "newStep": 29,
+      "category": "unchanged",
+      "similarity": 1,
+      "note": null
+    }
+  ]
+}

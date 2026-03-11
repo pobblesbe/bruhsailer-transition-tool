@@ -1,0 +1,10 @@
+{
+  "name": "bruhsailor-transition-tool",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Data scraper and local app for BRUHsailer guide transition planning",
+  "scripts": {
+    "scrape": "node scraper/scrape.js",
+    "map": "node scraper/generate-mapping.js"
+  }
+}

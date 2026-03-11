@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BRUHsailer Guide Transition Tool</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div>
+          <h1>BRUHsailer Guide Transition Tool</h1>
+          <p>Bridge Landlubber progress into the updated BRUHsailer route.</p>
+        </div>
+        <div class="header-actions">
+          <button type="button" class="secondary-btn" id="jumpNextBtn">Jump to next incomplete</button>
+        </div>
+      </header>
+
+      <main class="main-layout">
+        <aside class="panel old-panel" aria-label="Old guide panel">
+          <div class="panel-head">
+            <h2>Old Guide</h2>
+            <p>Select where you currently are.</p>
+          </div>
+
+          <div class="old-guide-scroll" id="oldGuideList">
+            <p class="info-note" id="oldGuideStatus">Loading old guide data...</p>
+          </div>
+        </aside>
+
+        <section class="panel right-panel" aria-label="Transition and differences panel">
+          <div class="panel-head">
+            <div class="right-panel-head-top">
+              <h2>Transition plan / Browse all step differences</h2>
+              <div class="plan-progress" id="catchupSummary">0 / 0 completed</div>
+            </div>
+            <div class="tab-row" role="tablist" aria-label="Main view tabs">
+              <button type="button" class="tab-btn is-active" role="tab" aria-selected="true" data-tab-target="catchupView">Transition plan</button>
+              <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab-target="diffView">Browse all step differences</button>
+            </div>
+          </div>
+
+          <div class="tab-panels">
+            <section class="tab-panel is-active" id="catchupView" role="tabpanel">
+              <p class="info-note" id="catchupStatus">Select a step to generate a transition plan.</p>
+              <div class="catchup-completion" id="catchupCompletion" hidden>
+                <p class="catchup-completion-title" id="catchupCompletionTitle">You're caught up!</p>
+                <p class="catchup-completion-text" id="catchupCompletionText">Continue in the new guide.</p>
+                <a
+                  id="catchupCompletionLink"
+                  class="catchup-completion-link"
+                  href="https://umkyzn.github.io/BRUHsailer/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open new guide
+                </a>
+              </div>
+              <ul class="plan-list" id="catchupList"></ul>
+            </section>
+
+            <section class="tab-panel" id="diffView" role="tabpanel">
+              <p class="info-note" id="diffStatus">Loading full diff...</p>
+              <div id="diffContent" class="diff-content"></div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="app-footer">
+        <p id="correspondingStepLabel">Corresponding new guide position: Chapter 1, Step 12</p>
+        <a id="openGuideLink" href="https://umkyzn.github.io/BRUHsailer/" target="_blank" rel="noreferrer">Open new guide</a>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
