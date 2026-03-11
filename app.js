@@ -16,7 +16,8 @@
   const openGuideLink = document.getElementById("openGuideLink");
   const STORAGE_KEYS = {
     selectedOldStepId: "bruhsailor:selectedOldStepId",
-    catchupProgress: "bruhsailor:catchupProgress",
+    catchupDoneStepIds: "bruhsailor:catchupDoneStepIds",
+    legacyCatchupProgressByPlan: "bruhsailor:catchupProgress",
   };
   const state = {
     oldGuide: null,
@@ -32,8 +33,7 @@
     newOrderIndexById: new Map(),
     correspondingNewStep: null,
     selectedOldStepId: null,
-    catchupProgressByPlan: {},
-    currentCatchupPlanKey: null,
+    catchupDoneStepIds: new Set(),
     currentCatchupItems: [],
   };
 
@@ -62,64 +62,73 @@
     }
   }
 
-  function loadCatchupProgressByPlan() {
+  function loadCatchupDoneStepIds() {
     try {
-      const raw = localStorage.getItem(STORAGE_KEYS.catchupProgress);
-      if (!raw) {
-        return {};
+      const raw = localStorage.getItem(STORAGE_KEYS.catchupDoneStepIds);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (Array.isArray(parsed)) {
+          return new Set(parsed.filter((item) => typeof item === "string"));
+        }
       }
 
-      const parsed = JSON.parse(raw);
-      if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
-        return {};
+      // Backward compatibility: migrate legacy per-plan progress to global done IDs.
+      const legacyRaw = localStorage.getItem(STORAGE_KEYS.legacyCatchupProgressByPlan);
+      if (!legacyRaw) {
+        return new Set();
       }
 
-      return parsed;
+      const legacyParsed = JSON.parse(legacyRaw);
+      if (!legacyParsed || typeof legacyParsed !== "object" || Array.isArray(legacyParsed)) {
+        return new Set();
+      }
+
+      const done = new Set();
+      Object.values(legacyParsed).forEach((value) => {
+        if (!Array.isArray(value)) {
+          return;
+        }
+        value.forEach((item) => {
+          if (typeof item === "string") {
+            done.add(item);
+          }
+        });
+      });
+
+      return done;
     } catch (error) {
       console.warn("Unable to read catch-up progress from localStorage.", error);
-      return {};
+      return new Set();
     }
   }
 
-  function saveCatchupProgressByPlan() {
+  function saveCatchupDoneStepIds() {
     try {
       localStorage.setItem(
-        STORAGE_KEYS.catchupProgress,
-        JSON.stringify(state.catchupProgressByPlan)
+        STORAGE_KEYS.catchupDoneStepIds,
+        JSON.stringify(Array.from(state.catchupDoneStepIds))
       );
     } catch (error) {
       console.warn("Unable to save catch-up progress to localStorage.", error);
     }
   }
 
-  function getCurrentPlanCheckedSet() {
-    const key = state.currentCatchupPlanKey;
-    if (!key) {
-      return new Set();
-    }
-
-    const ids = Array.isArray(state.catchupProgressByPlan[key])
-      ? state.catchupProgressByPlan[key]
-      : [];
-
-    return new Set(ids);
+  function getCheckedSet() {
+    return new Set(state.catchupDoneStepIds);
   }
 
-  function setCheckedForCurrentPlan(stepId, isChecked) {
-    const key = state.currentCatchupPlanKey;
-    if (!key || !stepId) {
+  function setCheckedStepDone(stepId, isChecked) {
+    if (!stepId) {
       return;
     }
 
-    const checkedSet = getCurrentPlanCheckedSet();
     if (isChecked) {
-      checkedSet.add(stepId);
+      state.catchupDoneStepIds.add(stepId);
     } else {
-      checkedSet.delete(stepId);
+      state.catchupDoneStepIds.delete(stepId);
     }
 
-    state.catchupProgressByPlan[key] = Array.from(checkedSet);
-    saveCatchupProgressByPlan();
+    saveCatchupDoneStepIds();
   }
 
   function stripChapterPrefix(title) {
@@ -479,10 +488,6 @@
     };
   }
 
-  function getPlanKeyForSelection(selectedOldStepId) {
-    return String(selectedOldStepId || "none");
-  }
-
   function setCatchupCardCheckedState(card, isChecked) {
     if (!(card instanceof HTMLElement)) {
       return;
@@ -498,7 +503,7 @@
     }
 
     const total = state.currentCatchupItems.length;
-    const checkedSet = getCurrentPlanCheckedSet();
+    const checkedSet = getCheckedSet();
     let completed = 0;
     state.currentCatchupItems.forEach((item) => {
       if (checkedSet.has(item.newStep.id)) {
@@ -522,7 +527,6 @@
 
     catchupList.innerHTML = "";
     state.currentCatchupItems = [];
-    state.currentCatchupPlanKey = null;
     setCatchupCompletionState(false, false);
 
     if (!planResult || !planResult.correspondingNewStep) {
@@ -533,7 +537,6 @@
     }
 
     const items = planResult.items || [];
-    state.currentCatchupPlanKey = getPlanKeyForSelection(state.selectedOldStepId);
     state.currentCatchupItems = items;
 
     if (items.length === 0) {
@@ -542,7 +545,7 @@
       return;
     }
 
-    const checkedSet = getCurrentPlanCheckedSet();
+    const checkedSet = getCheckedSet();
     setCatchupStatusMessage(null);
 
     items.forEach((item) => {
@@ -1199,7 +1202,7 @@
 
   async function loadAllData() {
     try {
-      state.catchupProgressByPlan = loadCatchupProgressByPlan();
+      state.catchupDoneStepIds = loadCatchupDoneStepIds();
 
       const [oldResponse, newResponse, mappingResponse] = await Promise.all([
         fetch("data/old-guide.json"),
@@ -1369,7 +1372,7 @@
       return;
     }
 
-    setCheckedForCurrentPlan(stepId, target.checked);
+    setCheckedStepDone(stepId, target.checked);
 
     const card = target.closest(".plan-item");
     setCatchupCardCheckedState(card, target.checked);
