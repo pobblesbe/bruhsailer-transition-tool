@@ -5,7 +5,9 @@
   const diffStatus = document.getElementById("diffStatus");
   const diffContent = document.getElementById("diffContent");
   const catchupStatus = document.getElementById("catchupStatus");
+  const catchupOnboarding = document.getElementById("catchupOnboarding");
   const catchupList = document.getElementById("catchupList");
+  const planHelp = document.getElementById("planHelp");
   const catchupSummary = document.getElementById("catchupSummary");
   const catchupCompletion = document.getElementById("catchupCompletion");
   const catchupCompletionTitle = document.getElementById("catchupCompletionTitle");
@@ -14,6 +16,13 @@
   const jumpNextBtn = document.getElementById("jumpNextBtn");
   const correspondingStepLabel = document.getElementById("correspondingStepLabel");
   const openGuideLink = document.getElementById("openGuideLink");
+  const appFooter = document.getElementById("appFooter");
+  const oldPanel = document.querySelector(".old-panel");
+  const oldSelectionPill = document.getElementById("oldSelectionPill");
+  const rightPanel = document.querySelector(".right-panel");
+  const mainTabs = document.getElementById("mainTabs");
+  const workflowStep1 = document.getElementById("workflowStep1");
+  const workflowStep2 = document.getElementById("workflowStep2");
   const STORAGE_KEYS = {
     selectedOldStepId: "bruhsailor:selectedOldStepId",
     catchupDoneStepIds: "bruhsailor:catchupDoneStepIds",
@@ -143,10 +152,10 @@
     }
 
     if (message) {
-      catchupStatus.style.display = "block";
+      catchupStatus.hidden = false;
       catchupStatus.textContent = message;
     } else {
-      catchupStatus.style.display = "none";
+      catchupStatus.hidden = true;
       catchupStatus.textContent = "";
     }
   }
@@ -165,10 +174,10 @@
     }
 
     if (message) {
-      diffStatus.style.display = "block";
+      diffStatus.hidden = false;
       diffStatus.textContent = message;
     } else {
-      diffStatus.style.display = "none";
+      diffStatus.hidden = true;
       diffStatus.textContent = "";
     }
   }
@@ -193,6 +202,97 @@
     if (openGuideLink) {
       openGuideLink.href = createGuideHref();
     }
+
+    if (appFooter) {
+      appFooter.hidden = false;
+    }
+  }
+
+  function setGuidanceState() {
+    const hasSelection = Boolean(state.selectedOldStepId);
+    const hasResolvedPlan = Boolean(state.selectedOldStepId && state.correspondingNewStep);
+    if (oldPanel) {
+      oldPanel.classList.toggle("needs-selection", !hasSelection);
+    }
+
+    if (catchupOnboarding) {
+      catchupOnboarding.hidden = hasSelection;
+    }
+
+    if (planHelp) {
+      planHelp.hidden = !hasSelection;
+    }
+
+    if (mainTabs) {
+      mainTabs.hidden = !hasSelection;
+    }
+
+    if (rightPanel) {
+      rightPanel.classList.toggle("is-locked", !hasSelection);
+    }
+
+    if (workflowStep1) {
+      workflowStep1.classList.toggle("is-active", !hasSelection);
+      workflowStep1.classList.toggle("is-complete", hasSelection);
+    }
+
+    if (workflowStep2) {
+      workflowStep2.classList.toggle("is-active", hasSelection);
+      workflowStep2.classList.remove("is-complete");
+    }
+
+    if (appFooter) {
+      appFooter.hidden = !hasResolvedPlan;
+    }
+
+    if (jumpNextBtn) {
+      jumpNextBtn.hidden = !hasResolvedPlan || state.currentCatchupItems.length === 0;
+    }
+  }
+
+  function flashRightPanel() {
+    if (!(rightPanel instanceof HTMLElement)) {
+      return;
+    }
+
+    rightPanel.classList.remove("is-refreshed");
+    void rightPanel.offsetWidth;
+    rightPanel.classList.add("is-refreshed");
+    window.setTimeout(() => {
+      rightPanel.classList.remove("is-refreshed");
+    }, 320);
+  }
+
+  function updateOldSelectionPillVisibility() {
+    if (!(oldSelectionPill instanceof HTMLElement) || !oldGuideList) {
+      return;
+    }
+
+    if (!state.selectedOldStepId) {
+      oldSelectionPill.hidden = true;
+      return;
+    }
+
+    const selectedStep = state.oldLookup.get(state.selectedOldStepId);
+    if (selectedStep) {
+      oldSelectionPill.textContent =
+        "Currently at: Chapter " + selectedStep.chapter + ", Step " + selectedStep.number;
+    }
+
+    const selectedButton = oldGuideList.querySelector(
+      '.old-step[data-step-id="' + state.selectedOldStepId + '"]'
+    );
+
+    if (!(selectedButton instanceof HTMLElement)) {
+      oldSelectionPill.hidden = true;
+      return;
+    }
+
+    const listRect = oldGuideList.getBoundingClientRect();
+    const buttonRect = selectedButton.getBoundingClientRect();
+    const isVisible = buttonRect.top >= listRect.top && buttonRect.bottom <= listRect.bottom;
+
+    oldSelectionPill.hidden = isVisible;
   }
 
   function setCatchupCompletionState(isVisible, isAlreadyCaughtUp) {
@@ -511,7 +611,12 @@
       }
     });
 
-    catchupSummary.textContent = completed + " / " + total + " completed";
+    const hasSelection = Boolean(state.selectedOldStepId && state.correspondingNewStep);
+    catchupSummary.hidden = !hasSelection || total === 0;
+
+    if (!catchupSummary.hidden) {
+      catchupSummary.textContent = completed + " / " + total + " completed";
+    }
 
     const isComplete = total === 0 || completed === total;
     const isAlreadyCaughtUp = total === 0;
@@ -530,9 +635,10 @@
     setCatchupCompletionState(false, false);
 
     if (!planResult || !planResult.correspondingNewStep) {
-      setCatchupStatusMessage("Select a step on the left to generate a transition plan.");
-      catchupSummary.textContent = "0 / 0 completed";
+      setCatchupStatusMessage(null);
+      catchupSummary.hidden = true;
       catchupSummary.classList.remove("is-complete");
+      setGuidanceState();
       return;
     }
 
@@ -542,6 +648,7 @@
     if (items.length === 0) {
       setCatchupStatusMessage("No transition steps needed before this resume point.");
       updateCatchupProgressSummary();
+      setGuidanceState();
       return;
     }
 
@@ -626,6 +733,7 @@
     });
 
     updateCatchupProgressSummary();
+    setGuidanceState();
   }
 
   function updateCatchupFromSelection() {
@@ -636,9 +744,13 @@
       updateCorrespondingLabel(
         "new-" + planResult.correspondingNewStep.chapter + "-" + planResult.correspondingNewStep.number
       );
+    } else if (appFooter) {
+      appFooter.hidden = true;
     }
 
     renderCatchupPlan(planResult);
+    updateOldSelectionPillVisibility();
+    flashRightPanel();
   }
 
   function setSelectedOldStep(stepId) {
@@ -677,12 +789,22 @@
     }
 
     state.selectedOldStepId = stepId;
-    updateCorrespondingLabel(stepId);
     saveSelectedOldStepId(stepId);
+
+    activateTab("catchupView");
 
     if (state.mapping && state.newLinearSteps.length > 0) {
       updateCatchupFromSelection();
     }
+
+    if (window.matchMedia("(max-width: 980px)").matches) {
+      const catchupPanel = document.getElementById("catchupView");
+      if (catchupPanel instanceof HTMLElement) {
+        catchupPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    setGuidanceState();
   }
 
   function renderOldGuideChapters() {
@@ -796,10 +918,11 @@
       return;
     }
 
-    const firstStepButton = oldGuideList.querySelector(".old-step");
-    if (firstStepButton instanceof HTMLElement) {
-      setSelectedOldStep(firstStepButton.dataset.stepId);
-    }
+    state.selectedOldStepId = null;
+    state.correspondingNewStep = null;
+    renderCatchupPlan({ correspondingNewStep: null, items: [] });
+    setGuidanceState();
+    updateOldSelectionPillVisibility();
   }
 
   function createDiffLine(label, text, className) {
@@ -1378,6 +1501,15 @@
     setCatchupCardCheckedState(card, target.checked);
 
     updateCatchupProgressSummary();
+    setGuidanceState();
+  });
+
+  oldGuideList.addEventListener("scroll", () => {
+    updateOldSelectionPillVisibility();
+  });
+
+  window.addEventListener("resize", () => {
+    updateOldSelectionPillVisibility();
   });
 
   if (jumpNextBtn) {
@@ -1393,6 +1525,8 @@
       nextCard.scrollIntoView({ behavior: "smooth", block: "center" });
     });
   }
+
+  setGuidanceState();
 
   loadAllData();
 })();

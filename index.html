@@ -11,19 +11,33 @@
       <header class="app-header">
         <div>
           <h1>BRUHsailer Guide Transition Tool</h1>
-          <p>Bridge Landlubber progress into the updated BRUHsailer route.</p>
+          <p>Pick your last completed Landlubber step and get a clear catch-up checklist.</p>
         </div>
         <div class="header-actions">
-          <button type="button" class="secondary-btn" id="jumpNextBtn">Jump to next incomplete</button>
+          <button type="button" class="secondary-btn" id="jumpNextBtn" hidden>Jump to next incomplete</button>
         </div>
       </header>
+
+      <section class="workflow-strip" aria-label="How to use this tool">
+        <div class="workflow-step" id="workflowStep1">
+          <p class="workflow-kicker">Step 1</p>
+          <p class="workflow-copy">Select your last completed step in the old guide</p>
+        </div>
+        <div class="workflow-separator" aria-hidden="true">→</div>
+        <div class="workflow-step" id="workflowStep2">
+          <p class="workflow-kicker">Step 2</p>
+          <p class="workflow-copy">Follow your generated catch-up checklist</p>
+        </div>
+      </section>
 
       <main class="main-layout">
         <aside class="panel old-panel" aria-label="Old guide panel">
           <div class="panel-head">
-            <h2>Old Guide</h2>
-            <p>Select where you currently are.</p>
+            <h2><span class="step-chip">Step 1</span><span>Your position in the old guide</span></h2>
+            <p id="oldPanelHint">Click the step you last completed.</p>
           </div>
+
+          <p class="old-selection-pill" id="oldSelectionPill" hidden></p>
 
           <div class="old-guide-scroll" id="oldGuideList">
             <p class="info-note" id="oldGuideStatus">Loading old guide data...</p>
@@ -33,10 +47,10 @@
         <section class="panel right-panel" aria-label="Transition and differences panel">
           <div class="panel-head">
             <div class="right-panel-head-top">
-              <h2>Transition plan / Browse all step differences</h2>
-              <div class="plan-progress" id="catchupSummary">0 / 0 completed</div>
+              <h2><span class="step-chip">Step 2</span><span>Your catch-up plan</span></h2>
+              <div class="plan-progress" id="catchupSummary" hidden>0 / 0 completed</div>
             </div>
-            <div class="tab-row" role="tablist" aria-label="Main view tabs">
+            <div class="tab-row" id="mainTabs" role="tablist" aria-label="Main view tabs">
               <button type="button" class="tab-btn is-active" role="tab" aria-selected="true" data-tab-target="catchupView">Transition plan</button>
               <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab-target="diffView">Browse all step differences</button>
             </div>
@@ -44,7 +58,25 @@
 
           <div class="tab-panels">
             <section class="tab-panel is-active" id="catchupView" role="tabpanel">
-              <p class="info-note" id="catchupStatus">Select a step to generate a transition plan.</p>
+              <section class="onboarding-card" id="catchupOnboarding" aria-live="polite">
+                <p class="onboarding-eyebrow">Start Here</p>
+                <h3>Generate your personal catch-up plan</h3>
+                <p>This tool compares your old guide progress with the updated BRUHsailer route.</p>
+                <ol class="onboarding-steps">
+                  <li>Select your current step in the old guide on the left.</li>
+                  <li>Your personal catch-up steps will appear here instantly.</li>
+                </ol>
+              </section>
+              <aside class="plan-help" id="planHelp" hidden>
+                <p class="plan-help-title">How to use this plan</p>
+                <ul class="plan-help-list">
+                  <li>Work top to bottom and mark each step as Done when finished.</li>
+                  <li>Modified steps show old versus new wording, so review those first.</li>
+                  <li>Added steps are new requirements that did not exist in Landlubber.</li>
+                  <li>Use Browse all step differences if you want full chapter context.</li>
+                </ul>
+              </aside>
+              <p class="info-note" id="catchupStatus" hidden></p>
               <div class="catchup-completion" id="catchupCompletion" hidden>
                 <p class="catchup-completion-title" id="catchupCompletionTitle">You're caught up!</p>
                 <p class="catchup-completion-text" id="catchupCompletionText">Continue in the new guide.</p>
@@ -63,13 +95,20 @@
 
             <section class="tab-panel" id="diffView" role="tabpanel">
               <p class="info-note" id="diffStatus">Loading full diff...</p>
+              <div class="diff-legend" aria-label="Difference legend">
+                <span class="legend-item"><span class="legend-dot is-modified" aria-hidden="true"></span>Modified</span>
+                <span class="legend-item"><span class="legend-dot is-added" aria-hidden="true"></span>Added</span>
+                <span class="legend-item"><span class="legend-dot is-removed" aria-hidden="true"></span>Removed</span>
+                <span class="legend-item"><span class="legend-dot is-reordered" aria-hidden="true"></span>Reordered</span>
+                <span class="legend-item"><span class="legend-dot is-unchanged" aria-hidden="true"></span>Unchanged</span>
+              </div>
               <div id="diffContent" class="diff-content"></div>
             </section>
           </div>
         </section>
       </main>
 
-      <footer class="app-footer">
+      <footer class="app-footer" id="appFooter" hidden>
         <p id="correspondingStepLabel">Corresponding new guide position: Chapter 1, Step 12</p>
         <a id="openGuideLink" href="https://umkyzn.github.io/BRUHsailer/" target="_blank" rel="noreferrer">Open new guide</a>
       </footer>

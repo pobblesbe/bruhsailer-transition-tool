@@ -17,15 +17,12 @@ This tool figures out exactly what changed, what you missed, and gives you a ste
 
 ## Getting started
 
-No build step, no server — just open `index.html` in your browser.
-
 ```
 git clone https://github.com/pobblesbe/bruhsailer-transition-tool.git
 cd bruhsailer-transition-tool
-open index.html
+python -m http.server
 ```
-
-The scraped guide data is already included in `data/`.
+Then open `http://localhost:8000` in your browser.
 
 ## Re-scraping the guides (optional)
 

@@ -40,7 +40,7 @@ body {
   height: 100vh;
   padding: 12px;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto auto 1fr auto;
   gap: 10px;
 }
 
@@ -68,10 +68,68 @@ body {
   line-height: 1.2;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .app-header p {
   margin: 4px 0 0;
   color: var(--ink-500);
   font-size: 0.88rem;
+}
+
+.workflow-strip {
+  background: linear-gradient(140deg, rgba(240, 249, 244, 0.95), rgba(234, 244, 251, 0.95));
+  border: 1px solid rgba(18, 88, 61, 0.24);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(16, 37, 28, 0.08);
+  padding: 8px 10px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.workflow-step {
+  border: 1px solid rgba(18, 88, 61, 0.16);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 6px 8px;
+  opacity: 0.64;
+  transition: opacity 140ms ease, border-color 140ms ease, background 140ms ease;
+}
+
+.workflow-step.is-active {
+  opacity: 1;
+  border-color: rgba(18, 88, 61, 0.38);
+  background: linear-gradient(160deg, #e5f5ec, #e7f2fa);
+}
+
+.workflow-step.is-complete {
+  opacity: 0.9;
+  border-color: rgba(18, 88, 61, 0.26);
+}
+
+.workflow-kicker {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #1a6547;
+}
+
+.workflow-copy {
+  margin: 2px 0 0;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #223c32;
+}
+
+.workflow-separator {
+  color: #2f5d4a;
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 .secondary-btn {
@@ -105,6 +163,24 @@ body {
 .panel-head h2 {
   margin: 0;
   font-size: 0.96rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.step-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: linear-gradient(160deg, #1b6e4d, #25825d);
+  color: #f4fff9;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .right-panel-head-top {
@@ -118,6 +194,42 @@ body {
   margin: 4px 0 0;
   color: var(--ink-500);
   font-size: 0.82rem;
+}
+
+.old-panel.needs-selection {
+  border-color: rgba(23, 106, 74, 0.42);
+  box-shadow:
+    0 0 0 2px rgba(23, 106, 74, 0.08),
+    var(--shadow);
+}
+
+.old-panel.needs-selection #oldPanelHint {
+  color: #1a6346;
+  font-weight: 800;
+  animation: hint-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes hint-pulse {
+  0% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.old-selection-pill {
+  margin: 8px 12px 0;
+  padding: 6px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(23, 106, 74, 0.2);
+  background: linear-gradient(160deg, #edf8f2, #eef7fb);
+  font-size: 0.76rem;
+  font-weight: 800;
+  color: #245746;
 }
 
 .old-guide-scroll,
@@ -345,6 +457,48 @@ body {
   animation: panel-fade-in 180ms ease;
 }
 
+.onboarding-card {
+  margin: 0 0 8px;
+  border: 1px solid rgba(23, 106, 74, 0.26);
+  border-radius: 12px;
+  background: linear-gradient(152deg, #eef9f3, #ecf5fb);
+  padding: 10px;
+}
+
+.onboarding-eyebrow {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #196a4b;
+}
+
+.onboarding-card h3 {
+  margin: 4px 0 0;
+  font-size: 0.94rem;
+}
+
+.onboarding-card p {
+  margin: 5px 0 0;
+  font-size: 0.8rem;
+  color: #385248;
+  font-weight: 700;
+}
+
+.onboarding-steps {
+  margin: 7px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 4px;
+}
+
+.onboarding-steps li {
+  font-size: 0.8rem;
+  color: #26443a;
+  font-weight: 800;
+}
+
 @keyframes panel-fade-in {
   from {
     opacity: 0;
@@ -359,6 +513,84 @@ body {
 .diff-content {
   display: grid;
   gap: 10px;
+}
+
+.diff-legend {
+  margin: 8px 0;
+  border: 1px solid rgba(20, 74, 51, 0.14);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 6px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.legend-item {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #2e453c;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.legend-dot.is-modified {
+  background: #fff2c9;
+  border-color: #deb95c;
+}
+
+.legend-dot.is-added {
+  background: #dbecff;
+  border-color: #7ca9d1;
+}
+
+.legend-dot.is-removed {
+  background: #ffe2e2;
+  border-color: #d49b9b;
+}
+
+.legend-dot.is-reordered {
+  background: #ede1ff;
+  border-color: #ad8cd8;
+}
+
+.legend-dot.is-unchanged {
+  background: #f1f4f6;
+  border-color: #cfd7dc;
+}
+
+.right-panel.is-refreshed {
+  animation: panel-refresh-flash 280ms ease;
+}
+
+.right-panel.is-locked {
+  border-color: rgba(14, 44, 31, 0.2);
+}
+
+.right-panel.is-locked .tab-panels {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.56), rgba(245, 249, 247, 0.6));
+}
+
+@keyframes panel-refresh-flash {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(23, 106, 74, 0.22),
+      var(--shadow);
+  }
+  100% {
+    box-shadow:
+      0 0 0 9px rgba(23, 106, 74, 0),
+      var(--shadow);
+  }
 }
 
 .diff-chapter {
@@ -670,6 +902,34 @@ body {
   opacity: 0.88;
 }
 
+.plan-help {
+  margin: 0 0 8px;
+  border: 1px solid rgba(20, 74, 51, 0.16);
+  border-radius: 12px;
+  background: linear-gradient(160deg, rgba(242, 248, 245, 0.92), rgba(238, 245, 250, 0.9));
+  padding: 8px 10px;
+}
+
+.plan-help-title {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 900;
+  color: #234b3b;
+}
+
+.plan-help-list {
+  margin: 6px 0 0;
+  padding-left: 16px;
+  display: grid;
+  gap: 3px;
+}
+
+.plan-help-list li {
+  font-size: 0.75rem;
+  color: #315246;
+  font-weight: 700;
+}
+
 .plan-progress {
   margin: 0;
   font-size: 0.78rem;
@@ -756,6 +1016,15 @@ body {
   .app-shell {
     height: auto;
     min-height: 100vh;
+  }
+
+  .workflow-strip {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .workflow-separator {
+    display: none;
   }
 
   .main-layout {
