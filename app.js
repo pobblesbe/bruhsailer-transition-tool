@@ -402,7 +402,7 @@
           id: step.id,
           chapter: chapterIndex + 1,
           number: step.number,
-          text: step.text || "",
+          text: step.displayText || step.text || "",
           sectionIndex:
             step && step.section && Number.isFinite(step.section.index)
               ? step.section.index
@@ -707,9 +707,9 @@
       const body = document.createElement("div");
       body.className = "plan-item-body";
 
-      const newDisplayText = item.newStep ? item.newStep.text : "";
-      const oldDiffText = item.oldStep ? item.oldStep.text : "";
-      const newDiffText = item.newStep ? item.newStep.text : "";
+      const newDisplayText = item.newStep ? item.newStep.text || item.newStep.displayText || "" : "";
+      const oldDiffText = item.oldStep ? item.oldStep.text || item.oldStep.displayText || "" : "";
+      const newDiffText = item.newStep ? item.newStep.text || item.newStep.displayText || "" : "";
       const tokenDiff = buildWordDiffTokens(oldDiffText, newDiffText);
 
       if (item.oldStep) {
